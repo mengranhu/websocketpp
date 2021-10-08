@@ -1146,11 +1146,11 @@ protected:
 private:
     /// Convenience method for logging the code and message for an error_code
     template <typename error_type>
-    void log_err(log::level l, const char * msg, const error_type & ec) {
-        std::stringstream s;
-        s << msg << " error: " << ec << " (" << ec.message() << ")";
-        m_elog->write(l,s.str());
-    }
+    // void log_err(log::level l, const char * msg, const error_type & ec) {
+    //     std::stringstream s;
+    //     s << msg << " error: " << ec << " (" << ec.message() << ")";
+    //     m_elog->write(l,s.str());
+    // }
 
     // static settings
     const bool m_is_server;
